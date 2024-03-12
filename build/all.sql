@@ -241,7 +241,7 @@ event ProductCreated(bytes32 indexed coverKey, bytes32 productKey, string info);
 CREATE TABLE cover.product_created
 (
   cover_key                                         bytes32 NOT NULL,
-  product_key                                       bytes32 NOT NULL,
+  product_key                                       bytes32 NOT NULL
   info                                              text NOT NULL
 ) INHERITS(core.transactions);
 
